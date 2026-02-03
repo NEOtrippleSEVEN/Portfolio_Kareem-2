@@ -37,7 +37,7 @@ const Hero = () => {
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10">
-            Full-Stack Developer & Business Automation Specialist.
+            Software Engineering Student & Business Automation Specialist.
             I transform ideas into scalable web applications and intelligent systems
             that help businesses grow.
           </p>
