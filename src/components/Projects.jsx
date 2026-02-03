@@ -8,8 +8,8 @@ const Projects = () => {
       tech: ['React', 'Node.js', 'Adobe Illustrator', 'Product Design'],
       highlights: ['Full branding in 2 weeks', 'Product design & development', 'E-commerce integration'],
       color: 'from-purple-500 to-pink-500',
-      link: null, // Add if public
-      image: '/images/aero.jpg'
+      link: null,
+      image: '/images/AERO Performance (Homepage).png'
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ const Projects = () => {
       highlights: ['60% prediction accuracy', 'Real-time portfolio analytics', 'AI-powered insights'],
       color: 'from-blue-500 to-cyan-500',
       link: null,
-      image: '/images/nsi.jpg'
+      image: '/images/North-Star-Invest Dashboard.png'
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ const Projects = () => {
       highlights: ['AI deal scoring', 'Diamond deal alerts', 'Automated analysis'],
       color: 'from-green-500 to-emerald-500',
       link: 'https://car-deal-finderr.netlify.app',
-      image: '/images/carfinder.jpg'
+      image: '/images/Car-Deal-Finder (Dashboard, Search engine).png'
     },
     {
       id: 4,
@@ -42,7 +42,7 @@ const Projects = () => {
       highlights: ['Course booking system', 'Automated calendar', 'Full branding'],
       color: 'from-blue-400 to-blue-600',
       link: 'https://halabi-shop.netlify.app',
-      image: '/images/halabi.jpg'
+      image: '/images/Halabi-Schneiderkunst (Hompage).png'
     },
     {
       id: 5,
@@ -53,7 +53,7 @@ const Projects = () => {
       highlights: ['Built in 2 hours', '42 levels', 'Retro aesthetics'],
       color: 'from-pink-500 to-purple-500',
       link: null,
-      image: '/images/spaceshooter.jpg'
+      image: '/images/GUNRUNNER Game(screenshot#1).png'
     },
     {
       id: 6,
@@ -64,7 +64,7 @@ const Projects = () => {
       highlights: ['Memory management', 'System administration', 'Algorithm optimization'],
       color: 'from-gray-500 to-gray-700',
       link: 'https://github.com/NEOtrippleSEVEN',
-      image: '/images/42.jpg'
+      image: null
     }
   ];
 
@@ -91,12 +91,22 @@ const Projects = () => {
               key={project.id}
               className="group gradient-border overflow-hidden card-hover"
             >
-              {/* Project Image Placeholder */}
-              <div className={`h-48 bg-gradient-to-br ${project.color} opacity-80 relative overflow-hidden`}>
-                <div className="absolute inset-0 bg-black/30" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-white/80 text-lg font-medium">{project.title}</span>
-                </div>
+              {/* Project Image */}
+              <div className="h-48 relative overflow-hidden">
+                {project.image ? (
+                  <>
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#12121a] via-transparent to-transparent" />
+                  </>
+                ) : (
+                  <div className={`w-full h-full bg-gradient-to-br ${project.color} opacity-80 flex items-center justify-center`}>
+                    <span className="text-white/80 text-lg font-medium">{project.title}</span>
+                  </div>
+                )}
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
                   {project.link && (
