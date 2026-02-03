@@ -9,7 +9,7 @@ const Projects = () => {
       highlights: ['Full branding in 2 weeks', 'Product design & development', 'E-commerce integration'],
       color: 'from-purple-500 to-pink-500',
       link: null,
-      image: '/images/AERO Performance (Homepage).png'
+      image: '/images/aero.png'
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ const Projects = () => {
       highlights: ['60% prediction accuracy', 'Real-time portfolio analytics', 'AI-powered insights'],
       color: 'from-blue-500 to-cyan-500',
       link: null,
-      image: '/images/North-Star-Invest Dashboard.png'
+      image: '/images/nsi.png'
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ const Projects = () => {
       highlights: ['AI deal scoring', 'Diamond deal alerts', 'Automated analysis'],
       color: 'from-green-500 to-emerald-500',
       link: 'https://car-deal-finderr.netlify.app',
-      image: '/images/Car-Deal-Finder (Dashboard, Search engine).png'
+      image: '/images/carfinder.png'
     },
     {
       id: 4,
@@ -42,7 +42,7 @@ const Projects = () => {
       highlights: ['Course booking system', 'Automated calendar', 'Full branding'],
       color: 'from-blue-400 to-blue-600',
       link: 'https://halabi-shop.netlify.app',
-      image: '/images/Halabi-Schneiderkunst (Hompage).png'
+      image: '/images/halabi.png'
     },
     {
       id: 5,
@@ -53,7 +53,7 @@ const Projects = () => {
       highlights: ['Built in 2 hours', '42 levels', 'Retro aesthetics'],
       color: 'from-pink-500 to-purple-500',
       link: null,
-      image: '/images/GUNRUNNER Game(screenshot#1).png'
+      image: '/images/spaceshooter.png'
     },
     {
       id: 6,
